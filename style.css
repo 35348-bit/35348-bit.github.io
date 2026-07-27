@@ -1,0 +1,278 @@
+:root {
+  --leica-black: #0b0b0b;
+  --leica-white: #ffffff;
+  --leica-red: #e20613;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #0b0b0b;
+  margin: 0;
+  padding: 0;
+}
+
+.banner{
+    width:100%;
+    height:auto;
+}
+section{
+    padding:70px 0;
+}
+/* NAV */
+nav {
+  background-color: var(--leica-red);
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(244, 240, 240);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* SECTION */
+.Leica{
+    text-align:center;
+    padding:60px 20px;
+}
+.Leica.camera2{
+    max-width:800px;
+    margin:40px auto;
+}
+
+/* PRODUCT */
+.camera {
+  display: inline-block;
+    width:250px;
+    margin: 15px;
+    max-width:100%;
+    vertical-align: top;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.camera:hover {
+  transform: scale(1.05);
+}
+
+.camera img {
+  width: 100%;
+}
+
+/* LINKS*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--leica-red);
+  text-align: center;
+  padding: 10px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+h2 {
+  font-weight: 300;
+  color: #ffffff;
+}
+
+p {
+  color: #f9f0f0;
+  line-height: 1.6;
+}
+
+nav{
+    background-color:rgb(228, 23, 23);
+    padding:15px 0;
+    border-bottom:1px solid #322d2d;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+nav ul li{
+    margin:0 25px;
+}
+
+nav ul li a{
+    color:rgb(240, 232, 232);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.history{
+    width:80%;
+    margin:60px auto;
+    background:#161616;
+    border:1px solid #393737;
+    border-radius:8px;
+    padding:30px;
+    text-align:center;
+}
+
+/* PRODUCT CARD */
+.camera {
+  background-color: #ff2121c1;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.camera img {
+  border-radius: 5px;
+}
+
+.button{
+    display:block;
+    width:170px;
+    padding:10px;
+    margin:20px auto;
+    text-align:center;
+    border:1px solid rgb(245, 240, 240);
+}
+
+.button:hover {
+  background-color: var(--leica-red);
+  border-color: var(--leica-red);
+}
+
+
+section {
+  gap: 20px;
+}
+
+body {
+  letter-spacing: 0.5px;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.product-row{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+/* ===========================
+   MOBILE VERSION
+=========================== */
+
+@media screen and (max-width:768px){
+
+body{
+    font-size:16px;
+}
+
+nav ul{
+    padding:0;
+}
+
+nav ul li{
+    display:block;
+    margin:15px 0;
+}
+
+.hero{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.Leica img{
+    width:100%;
+    height:auto;
+}
+
+.camera{
+    width:90%;
+    margin:20px auto;
+    display:block;
+}
+
+.camera img{
+    width:100%;
+}
+
+.container{
+    width:95%;
+}
+
+.button{
+    display:block;
+    width:180px;
+    margin:20px auto;
+    text-align:center;
+}
+
+footer{
+    font-size:14px;
+}
+
+}
+.product-details{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+@media screen and (max-width:768px){
+
+.product-details{
+    flex-direction:column;
+    text-align:center;
+}
+
+.product-details img{
+    width:90%;
+}
+
+}
